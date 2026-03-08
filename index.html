@@ -374,13 +374,25 @@
       for (let i = visibleCount; i < end && i < data.length; i++) {
         const { id, name } = data[i];
         const baseName = name.replace(/\s+\d+★$/, '');
-        const hasInfo = commanders[baseName];
+        const key = baseName.replace(/ /g, '_');
+        const commanderInfo = commanders[baseName];
+        const scrollInfo = commanders[key];
+        const hasInfo = commanderInfo || scrollInfo;
+        const isScrollChest = scrollInfo && scrollInfo.type === "Scroll Chest";
         const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${id}</td>
-          <td>${hasInfo ? `<span class="commander-link" onclick="showCommander('${baseName}', '${name}')">${name}</span>` : name}</td>
-          <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
-        `;
+        if (isScrollChest) {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${scrollInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        } else {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${commanderInfo ? `<span class="commander-link" onclick="showCommander('${baseName}', '${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        }
         tbody.appendChild(tr);
       }
       visibleCount = end;
@@ -426,13 +438,25 @@
 
       filteredData.forEach(({ id, name }) => {
         const baseName = name.replace(/\s+\d+★$/, '');
-        const hasInfo = commanders[baseName];
+        const key = baseName.replace(/ /g, '_');
+        const commanderInfo = commanders[baseName];
+        const scrollInfo = commanders[key];
+        const hasInfo = commanderInfo || scrollInfo;
+        const isScrollChest = scrollInfo && scrollInfo.type === "Scroll Chest";
         const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${id}</td>
-          <td>${hasInfo ? `<span class="commander-link" onclick="showCommander('${baseName}', '${name}')">${name}</span>` : name}</td>
-          <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
-        `;
+        if (isScrollChest) {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${scrollInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        } else {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${commanderInfo ? `<span class="commander-link" onclick="showCommander('${baseName}', '${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        }
         tbody.appendChild(tr);
       });
     }
@@ -526,6 +550,80 @@
       
       $('#commanderModal').modal('show');
       $('[data-toggle="tooltip"]').tooltip();
+    }
+
+    function showScrollChest(key, fullName) {
+      const scroll = commanders[key];
+      if (!scroll) return;
+
+      const scrollImages = {
+        "Impending Doom": "https://static.wikia.nocookie.net/galaxyonlineii/images/1/1f/Impending_Doom_Scroll.png",
+        "Frontline Surge": "https://static.wikia.nocookie.net/galaxyonlineii/images/1/1d/Frontline_Surge_Scroll.png",
+        "Light & Darkness": "https://static.wikia.nocookie.net/galaxyonlineii/images/b/bf/Light_and_Darkness_Scroll.png",
+        "Deadly Duo": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/88/Deadly_Duo_Scroll.png",
+        "Rays of Destiny": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/6d/Rays_of_Destiny_Scroll.png",
+        "Victory Roar": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/68/Victory_Roar_Scroll.png",
+        "Desolate Prayers": "https://static.wikia.nocookie.net/galaxyonlineii/images/b/bf/Desolate_Prayers_Scroll.png",
+        "Twin Torpedoes": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/43/Twin_Torpedoes_Scroll.png",
+        "Indomitable Duo": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dc/Indomitable_Duo_Scroll.png",
+        "Fatal Furies": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e5/Fatal_Furies_Scroll.png",
+        "Eternal Terrors": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/d7/Eternal_Terrors_Scroll.png",
+        "Kismet Beams": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/68/Kismet_Beams_Scroll.png",
+        "Death from Above": "https://static.wikia.nocookie.net/galaxyonlineii/images/2/25/Death_from_Above_Scroll.png",
+        "Iron Maidens": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/ed/Iron_Maidens_Scroll.png",
+        "Fairy & Fiend": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/d8/Fairy_%26_Fiend_Scroll.png",
+        "Suicidal Sirens": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/45/Suicidal_Sirens_Scroll.png",
+        "Wildfire": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/ea/Wildfire_Scroll.png",
+        "Tactical Wizards": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/4c/Tactical_Wizards_Scroll.png",
+        "Fearmongers": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+        "Pernicious Princes": "https://static.wikia.nocookie.net/galaxyonlineii/images/3/3e/Pernicious_Princes_Icon.jpg",
+        "Carbuncle Cohort": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/62/Carbuncle_Cohort_Icon.jpg",
+        "Enduring Chorus": "https://static.wikia.nocookie.net/galaxyonlineii/images/0/09/Enduring_Chorus_Icon.jpg",
+        "The Ravagers": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/The_Ravagers_Icon.jpg",
+        "Rex Scuta": "https://static.wikia.nocookie.net/galaxyonlineii/images/7/78/Rex_Scuta_Icon.jpg",
+        "Summa Cum Laude": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e9/Summa_Cum_Laude_Icon.jpg",
+        "Eschaton Adventists": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Eschaton_Adventists_sm.jpg",
+        "Hand of Lelantos": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e6/HandSm.jpg",
+        "Hekatian Witnesses": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e3/HekatianSm.jpg",
+        "Dopplegangers": "https://static.wikia.nocookie.net/galaxyonlineii/images/c/c6/DoppleSm.jpg"
+      };
+
+      let rewardsHtml = '';
+      if (scroll.rewards) {
+        rewardsHtml = '<div class="row text-center">';
+        scroll.rewards.forEach(reward => {
+          const imgUrl = scrollImages[reward] || '';
+          rewardsHtml += `
+            <div class="col-3 mb-2">
+              <div style="background: rgba(0,0,0,0.3); padding: 5px; border-radius: 4px;">
+                ${imgUrl ? `<img src="${imgUrl}" style="width: 40px; height: 40px;"><br>` : ''}
+                <span style="color: #fff; font-size: 10px;">${reward}</span>
+              </div>
+            </div>
+          `;
+        });
+        rewardsHtml += '</div>';
+      }
+
+      document.getElementById('commanderTitle').textContent = scroll.tier ? `Scroll Chest - Tier ${scroll.tier}` : fullName;
+      
+      document.getElementById('commanderBody').innerHTML = 
+        '<div class="row mb-4">' +
+          '<div class="col-md-4 text-center">' +
+            `<img src="${scroll.image}" alt="${fullName}" style="max-width: 160px; border: 3px solid #0072f5; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">` +
+            `<h5 class="mt-2" style="color: #ccba7a;">${scroll.description || 'Scroll Chest'}</h5>` +
+          '</div>' +
+          '<div class="col-md-8">' +
+            `<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>📍 Location</strong></h6>` +
+            `<p class="mb-2" style="color: #fff;">${scroll.location || 'Unknown'}</p>` +
+          '</div>' +
+        '</div>' +
+        '<div class="mb-2">' +
+          '<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>🎁 Possible Rewards</strong></h6>' +
+          rewardsHtml +
+        '</div>';
+      
+      $('#commanderModal').modal('show');
     }
 
     function togglePlayerId() {

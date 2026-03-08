@@ -9104,5 +9104,53 @@
         "battleship": 2499
       }
     }
+  },
+  "Scroll_Chest": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/b/b3/Scroll_Chest.jpg",
+    "description": "Divine Commander Scroll Chest",
+    "tier": "I",
+    "location": "Capricorn (any), Sagitarius.S01",
+    "rewards": ["Impending Doom", "Frontline Surge", "Light & Darkness", "Deadly Duo", "Rays of Destiny", "Victory Roar", "Desolate Prayers", "Twin Torpedoes"]
+  },
+  "Scroll_Chest-II": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Divine Commander Scroll Chest II",
+    "tier": "II",
+    "location": "Aquarius (any), Sagitarius.S02",
+    "rewards": ["Indomitable Duo", "Fatal Furies", "Eternal Terrors", "Kismet Beams", "Death from Above"]
+  },
+  "Scroll_Chest-III": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Divine Commander Scroll Chest III",
+    "tier": "III",
+    "location": "Pisces (any), Sagitarius.S03",
+    "rewards": ["Iron Maidens", "Fairy & Fiend", "Suicidal Sirens", "Wildfire", "Tactical Wizards"]
+  },
+  "Scroll_Chest-IV": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Divine Commander Scroll Chest IV",
+    "tier": "IV",
+    "location": "Leo (any), Sagitarius.S04",
+    "rewards": ["Fearmongers", "Pernicious Princes", "Carbuncle Cohort", "Enduring Chorus", "The Ravagers"]
+  },
+  "Scroll_Chest-V": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Divine Commander Scroll Chest V",
+    "tier": "V",
+    "location": "Virgo (any)",
+    "rewards": ["Rex Scuta", "Summa Cum Laude"]
+  },
+  "Scroll_Chest-VI": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Divine Commander Scroll Chest VI",
+    "tier": "VI",
+    "location": "Taurus (any)",
+    "rewards": ["Eschaton Adventists", "Hand of Lelantos", "Hekatian Witnesses", "Dopplegangers"]
   }
 }
