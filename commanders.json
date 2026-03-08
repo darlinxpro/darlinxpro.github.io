@@ -9030,14 +9030,14 @@
   "Valerius": {
     "name": "Valerius",
     "type": "Legendary",
-    "image": "https://krtools.info/imgs/commanders/Command95.jpg",
-    "skill": "Imperial Command",
-    "skillDesc": "Commands with imperial authority",
+    "image": "https://cdn.discordapp.com/attachments/1098324797542379580/1480348853629882399/968_Command112.png",
+    "skill": "Punish the Numerous",
+    "skillDesc": "Valerius excels against superior numbers. When his fleet attacks an enemy with more ships, it deals +60% increased damage.",
     "stats": {
-      "accuracy": 12,
-      "speed": 12,
-      "dodge": 12,
-      "electron": 12
+      "accuracy": 20,
+      "speed": 10,
+      "dodge": 4,
+      "electron": 5
     },
     "chance": {
       "initial": "",
@@ -9046,7 +9046,17 @@
       "1500": "",
       "1800": ""
     },
-    "description": "Valerius is a legendary commander",
+    "description": "",
+    "prof": {
+      "ballistic": "B",
+      "directional": "B",
+      "missile": "B",
+      "carrier": "B",
+      "defend": "B",
+      "frigate": "S",
+      "cruiser": "S",
+      "battleship": "B"
+    },
     "command": {
       "1": {
         "frigate": 1127,
