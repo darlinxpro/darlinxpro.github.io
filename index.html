@@ -375,9 +375,10 @@
         const { id, name } = data[i];
         const baseName = name.replace(/\s+\d+★$/, '');
         const key = baseName.replace(/ /g, '_');
+        const scrollKey = name.replace(/\s*\(Scroll\)\s*$/, ' Scroll');
         const commanderInfo = commanders[baseName];
         const scrollChestInfo = commanders[key];
-        const divineScrollInfo = commanders[name];
+        const divineScrollInfo = commanders[scrollKey];
         const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
         const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
         const hasInfo = commanderInfo || scrollChestInfo || divineScrollInfo;
@@ -385,7 +386,7 @@
         if (isDivineScroll) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${name}')">${name}</span>` : name}</td>
+            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${scrollKey}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else if (isScrollChest) {
@@ -447,9 +448,10 @@
       filteredData.forEach(({ id, name }) => {
         const baseName = name.replace(/\s+\d+★$/, '');
         const key = baseName.replace(/ /g, '_');
+        const scrollKey = name.replace(/\s*\(Scroll\)\s*$/, ' Scroll');
         const commanderInfo = commanders[baseName];
         const scrollChestInfo = commanders[key];
-        const divineScrollInfo = commanders[name];
+        const divineScrollInfo = commanders[scrollKey];
         const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
         const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
         const hasInfo = commanderInfo || scrollChestInfo || divineScrollInfo;
@@ -457,7 +459,7 @@
         if (isDivineScroll) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${name}')">${name}</span>` : name}</td>
+            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${scrollKey}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else if (isScrollChest) {
