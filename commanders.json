@@ -9405,20 +9405,62 @@
   },
   "Erebus Errants Scroll": {
     "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
     "location": "Champions' Mall",
     "commanders": []
   },
   "The Heartless Ones Scroll": {
     "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
     "location": "Champions' Mall",
     "commanders": []
   },
   "The Forsaken Scroll": {
     "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
     "location": "Champions' Mall",
+    "commanders": []
+  },
+  "Winter Knights Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Bart", "Krina Klaus"]
+  },
+  "Homeric Hellions Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Andrew", "Titan"]
+  },
+  "The Dictators Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Rayo", "Titan"]
+  },
+  "Dune Enforcers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Maletiz", "Titan"]
+  },
+  "Technomancers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Technomancer Scroll Chest",
+    "commanders": []
+  },
+  "The Pioneers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Pioneers Scroll Chest",
+    "commanders": []
+  },
+  "Queens of Blades Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "location": "Queens of Blades Scroll Chest",
     "commanders": []
   },
   "Pioneers Scroll Chest": {
@@ -9444,23 +9486,5 @@
     "tier": "Queens of Blades",
     "location": "Unknown",
     "rewards": ["Queens of Blades"]
-  },
-  "The Pioneers Scroll": {
-    "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
-    "location": "Pioneers Scroll Chest",
-    "commanders": []
-  },
-  "Technomancers Scroll": {
-    "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
-    "location": "Technomancer Scroll Chest",
-    "commanders": []
-  },
-  "Queens of Blades Scroll": {
-    "type": "Divine Scroll",
-    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
-    "location": "Queens of Blades Scroll Chest",
-    "commanders": []
   }
 }

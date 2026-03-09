@@ -377,7 +377,7 @@
         const key = baseName.replace(/ /g, '_');
         const scrollKey = name.replace(/\s*\(Scroll\)\s*$/, ' Scroll');
         const commanderInfo = commanders[baseName];
-        const scrollChestInfo = commanders[key];
+        const scrollChestInfo = commanders[key] || commanders[baseName];
         const divineScrollInfo = commanders[scrollKey];
         const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
         const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
@@ -392,7 +392,7 @@
         } else if (isScrollChest) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${baseName}', '${name}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else {
@@ -450,7 +450,7 @@
         const key = baseName.replace(/ /g, '_');
         const scrollKey = name.replace(/\s*\(Scroll\)\s*$/, ' Scroll');
         const commanderInfo = commanders[baseName];
-        const scrollChestInfo = commanders[key];
+        const scrollChestInfo = commanders[key] || commanders[baseName];
         const divineScrollInfo = commanders[scrollKey];
         const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
         const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
@@ -465,7 +465,7 @@
         } else if (isScrollChest) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${baseName}', '${name}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else {
@@ -584,7 +584,7 @@
     }
 
     function showScrollChest(key, fullName) {
-      const scroll = commanders[key];
+      const scroll = commanders[key] || commanders[fullName];
       if (!scroll) return;
 
       const scrollImages = {
