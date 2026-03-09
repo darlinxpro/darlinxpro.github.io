@@ -9402,5 +9402,65 @@
     "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
     "location": "Champions' Mall",
     "commanders": ["Wayne", "Penni"]
+  },
+  "Erebus Errants Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": []
+  },
+  "The Heartless Ones Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": []
+  },
+  "The Forsaken Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": []
+  },
+  "Pioneers Scroll Chest": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Pioneers Scroll Chest",
+    "tier": "Pioneers",
+    "location": "Unknown",
+    "rewards": ["The Pioneers"]
+  },
+  "Technomancer Scroll Chest": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Technomancer Scroll Chest",
+    "tier": "Technomancer",
+    "location": "Unknown",
+    "rewards": ["Technomancers"]
+  },
+  "Queens of Blades Scroll Chest": {
+    "type": "Scroll Chest",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/Scroll_Chest_II.jpg",
+    "description": "Queens of Blades Scroll Chest",
+    "tier": "Queens of Blades",
+    "location": "Unknown",
+    "rewards": ["Queens of Blades"]
+  },
+  "The Pioneers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Pioneers Scroll Chest",
+    "commanders": []
+  },
+  "Technomancers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Technomancer Scroll Chest",
+    "commanders": []
+  },
+  "Queens of Blades Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Queens of Blades Scroll Chest",
+    "commanders": []
   }
 }
