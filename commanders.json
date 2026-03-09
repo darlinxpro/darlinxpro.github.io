@@ -5413,6 +5413,7 @@
       "1800": ""
     },
     "description": "Reduces the chance of being hit and increases Attack Power by 15% for one round. Additional chance to reduce the Durability, Structures and Shields of enemies within 2 steps by 5% each turn. (Bart+Leo) (Affected by the Accuracy and Speed stats.)",
+    "recipe": ["Bart", "Leo", "Leech Lurkers Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5486,11 +5487,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "When attacking, there is a chance to instantly reload all weapons and prevent the enemy Commander\\'s ability for the next round. (Reggie+Hellen) (Affected by the Accuracy and Electron stats)",
+    "description": "When attacking, there is a chance to instantly reload all weapons and prevent the enemy Commander's ability for the next round. (Reggie+Hellen) (Affected by the Accuracy and Electron stats)",
+    "recipe": ["Reggie", "Hellen", "Eternal Terrors Scroll"],
     "prof": {
       "ballistic": "C",
       "directional": "C",
@@ -5569,6 +5571,7 @@
       "1800": ""
     },
     "description": "Chance to deal 6x damage while attacking but also reflects 10% of damage back to your ships. (Wayne + Penni) (Affected by the Accuracy and Speed attribute.)",
+    "recipe": ["Wayne", "Penni", "Feral Raptors Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5642,11 +5645,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "If the total combined value of Iron Maidens\\' base stats exceed those of the enemy commander, their ships\\' stability will increase to their maximum and has the chance to fully restore Shields and Structures each round. (Dilira + Rafia) (Affected by the Speed and Dodge attributes)",
+    "description": "If the total combined value of Iron Maidens' base stats exceed those of the enemy commander, their ships' stability will increase to their maximum and has the chance to fully restore Shields and Structures each round. (Dilira + Rafia) (Affected by the Speed and Dodge attributes)",
+    "recipe": ["Dilira", "Rafia", "Iron Maidens Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -5803,6 +5807,7 @@
       "1800": ""
     },
     "description": "Chance to deal 3x damage and instantly reload weapons, but also reflects 10% damage to attacking ship. (Penni + Hellen) (Affected by the Accuracy and Electron attributes)",
+    "recipe": ["Penni", "Hellen", "Suicidal Sirens Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5881,6 +5886,7 @@
       "1800": ""
     },
     "description": "Chance to deal 30% Scattering damage to enemy ships and instantly reload weapons. (Sandora + Hellen) (Affected by the Accuracy and Electron attributes)",
+    "recipe": ["Sandora", "Hellen", "Wildfire Scroll"],
     "prof": {
       "ballistic": "S",
       "directional": "S",
@@ -5959,6 +5965,7 @@
       "1800": ""
     },
     "description": "Chance to avoid damage and increase enemy He3 costs by up to 5 times. (Nick + Bruce) (Affected by the Dodge and Electron attributes)",
+    "recipe": ["Nick", "Bruce", "Tactical Wizards Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -6037,6 +6044,7 @@
       "1800": ""
     },
     "description": "While attacking or defending, has a chance to increase enemy He3 cost by 5 times and reduce enemy attack power by 50% until end of next round. (Raslin + Bruce) (Affected by the Electron attribute)",
+    "recipe": ["Raslin", "Bruce", "Fearmongers Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -6110,11 +6118,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "If the sum of Pernicious Princes’ 4 base stats exceed that of the enemy commander’s, any double attack or critical strike will ignore enemy fleet Defense and Agility and also trigger a double attack or critical strike for the ships in the following fleet slot. (Robert + Jakar)",
+    "description": "If the sum of Pernicious Princes' 4 base stats exceed that of the enemy commander's, any double attack or critical strike will ignore enemy fleet Defense and Agility and also trigger a double attack or critical strike for the ships in the following fleet slot. (Robert + Jakar)",
+    "recipe": ["Robert", "Jakar", "Pernicious Princes Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -6188,11 +6197,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Has a chance to be unaffected by the target\\'s Shield, Shield Modules and Stability during an attack and instantly reload all weapons after the attack. (Marcus + Hellen) (Affected by Accuracy and Speed attributes)",
+    "description": "Has a chance to be unaffected by the target's Shield, Shield Modules and Stability during an attack and instantly reload all weapons after the attack. (Marcus + Hellen) (Affected by Accuracy and Speed attributes)",
+    "recipe": ["Marcus", "Hellen", "Summa Cum Laude Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -6271,6 +6281,7 @@
       "1800": ""
     },
     "description": "Carbuncle Cohort will reflect 20% of the original damage taken, and then further reduce damage taken by 15%, and finally spread the remaining damage equally across all ships in the fleet. (Sylla + Joseph) (Affected by the Dodge attributes)",
+    "recipe": ["Sylla", "Joseph", "Carbuncle Cohort Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -6349,6 +6360,7 @@
       "1800": ""
     },
     "description": "Has a chance each round to fully restore all Shield and Structure points and increase the Dodge attribute of all friendly forces within 4 spaces by 5. This buff can be stacked. (Dilira + Shaba) (Affected by the Speed attribute)",
+    "recipe": ["Dilira", "Shaba", "Enduring Chorus Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -6427,6 +6439,7 @@
       "1800": ""
     },
     "description": "If all ships in a single enemy fleet slot are destroyed by ships in a single fleet slot under the command of The Ravagers, Attack Power of those ships will double. This buff can be stacked up to 8 times. There is also a chance, affected by the Accuracy and Electron attributes, that those ships will instantly reload all weapons. (Rocky + Hellen)",
+    "recipe": ["Rocky", "Hellen", "The Ravagers Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -6500,11 +6513,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "If the sum of Rex Scuta\\'s Base Stats exceed those of the enemy commander, the Stability of Rex Scuta\\'s ships will increase to the maximum. Effect also nullifies the enemy commander\\'s abilities. (Rayo + Rafia)",
+    "description": "If the sum of Rex Scuta's Base Stats exceed those of the enemy commander, the Stability of Rex Scuta's ships will increase to the maximum. Effect also nullifies the enemy commander's abilities. (Rayo + Rafia)",
+    "recipe": ["Rayo", "Rafia", "Rex Scuta Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -6583,6 +6597,7 @@
       "1800": ""
     },
     "description": "Has a chance to dodge attacks, increase Attack Power by 15% for one round, and increase Shield and Structure values of friendly forces within 4 spaces by 8% at end of the round. (Bart + Annata) (Affected by the Speed and Electron attributes)",
+    "recipe": ["Bart", "Annata", "Lurking Light Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",

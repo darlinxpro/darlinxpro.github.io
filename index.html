@@ -546,7 +546,20 @@
         '<div class="mb-2">' +
           '<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>📖 Description</strong></h6>' +
           '<p class="mb-0" style="font-size: 13px; line-height: 1.5;">' + cmd.description + '</p>' +
-        '</div>';
+        '</div>' +
+        
+        (cmd.recipe ? 
+        '<div class="mb-2">' +
+          '<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>🔧 Recipe (2 Commanders + 1 Scroll)</strong></h6>' +
+          '<div class="d-flex justify-content-around align-items-center">' +
+            '<div class="text-center"><strong style="color: #fff; font-size: 12px;">' + cmd.recipe[0] + '</strong></div>' +
+            '<div style="color: #339af0; font-size: 20px;">+</div>' +
+            '<div class="text-center"><strong style="color: #fff; font-size: 12px;">' + cmd.recipe[1] + '</strong></div>' +
+            '<div style="color: #339af0; font-size: 20px;">+</div>' +
+            '<div class="text-center"><strong style="color: #ffd43b; font-size: 12px;">' + cmd.recipe[2] + '</strong></div>' +
+          '</div>' +
+        '</div>' 
+        : '');
       
       $('#commanderModal').modal('show');
       $('[data-toggle="tooltip"]').tooltip();
