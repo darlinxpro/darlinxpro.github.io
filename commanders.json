@@ -6749,11 +6749,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Each time Eschaton Adventists level up, each of their base attributes increases by 5 points in addition to the attribute\\'s growth rate. When Eschaton Adventists attack, there is a chance to reduce the enemy Commander\\'s stats to 0 for the next round. (Titan + Aileen) (Affected by the Accuracy and Dodge attributes)",
+    "description": "Each time Eschaton Adventists level up, each of their base attributes increases by 5 points in addition to the attribute's growth rate. When Eschaton Adventists attack, there is a chance to reduce the enemy Commander's stats to 0 for the next round. (Titan + Aileen) (Affected by the Accuracy and Dodge attributes)",
+    "recipe": ["Titan", "Aileen", "Eschaton Adventists Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "A",
@@ -6832,6 +6833,7 @@
       "1800": ""
     },
     "description": "Each time Hand of Lelantos level up, each of their base attributes increases by 5 points in addition to the attribute's growth rate. If the Hand of Lelantos' Accuracy is higher than the enemy commander's Dodge, all attacks will ignore the enemy fleet's Overall Ship Defense and Agility. (Titan + Jakar) (Affected by the Accuracy attribute)",
+    "recipe": ["Titan", "Jakar", "Hand of Lelantos Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "S",
@@ -6910,6 +6912,7 @@
       "1800": ""
     },
     "description": "Each time  Hekatian Witnesses level up, each of their base attributes increases by 5 points in addition to the attribute's growth rate.  Hekatian Witnesses have a chance to destroy the entire ship stack during an attack. This effect can only be initiated once per round. (Titan + Nora) (Affected by the Accuracy and Dodge attributes)",
+    "recipe": ["Titan", "Nora", "Hekatian Witnesses Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -7373,11 +7376,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Each time the Homeric Hellions level up, the total of its four attributes is increased by an additional 5 points. If Homeric Hellions\\' Dodge rating is higher than the enemy commander\\'s Accuracy rating, Homeric Hellions\\' ships will not suffer any scattering damage. (Andrew + Titan)",
+    "description": "Each time the Homeric Hellions level up, the total of its four attributes is increased by an additional 5 points. If Homeric Hellions' Dodge rating is higher than the enemy commander's Accuracy rating, Homeric Hellions' ships will not suffer any scattering damage. (Andrew + Titan)",
+    "recipe": ["Andrew", "Titan", "Homeric Hellions Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "S",
@@ -7456,6 +7460,7 @@
       "1800": ""
     },
     "description": "At the end of movement, there is a chance Winter Knights cannot be a target of enemy attacks and gain +15% Attack Power until end of the Round; also increases overall ship defense of allied fleets within 4 spaces by 10 until end of next Round. Affected by the Accuracy and Dodge attributes.(Bart + Krina Klaus)",
+    "recipe": ["Bart", "Krina Klaus", "Winter Knights Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "B",
@@ -8231,11 +8236,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Each time The Dictators level up, their four attributes will increase by an additional 5 points. Enemy commanders will also have their ability nullified if the sum of The Dictators\\' base stats is higher than that of the enemy commander.",
+    "description": "Each time The Dictators level up, their four attributes will increase by an additional 5 points. Enemy commanders will also have their ability nullified if the sum of The Dictators' base stats is higher than that of the enemy commander.",
+    "recipe": ["Rayo", "Titan", "The Dictators Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -8309,11 +8315,12 @@
     "chance": {
       "initial": "",
       "500": "",
-      "1000": "",
+"1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Each time Dune Enforcers level up, the total increment of Dune Enforcers\\' four attributes is increased by an additional 5 points. When attacked, the Dune Enforcers have a chance to absorb all damage and reflect it back to the attacker. Affected by the Dodge and Speed attributes.",
+    "description": "Each time Dune Enforcers level up, the total increment of Dune Enforcers' four attributes is increased by an additional 5 points. When attacked, the Dune Enforcers have a chance to absorb all damage and reflect it back to the attacker. Affected by the Dodge and Speed attributes.",
+    "recipe": ["Maletiz", "Titan", "Dune Enforcers Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "C",
