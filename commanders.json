@@ -4462,9 +4462,10 @@
       "500": "",
       "1000": "",
       "1500": "",
-      "1800": ""
+"1800": ""
     },
-    "description": "This skill has the potential to cancel out a target’s defenses and deal triple damage when attacking, but also inflicts 10% recoil damage to the ship commanded.",
+    "description": "This skill has the potential to cancel out a target's defenses and deal triple damage when attacking, but also inflicts 10% recoil damage to the ship commanded.",
+    "recipe": ["Penni", "Eveline", "Victory Roar Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -4543,6 +4544,7 @@
       "1800": ""
     },
     "description": "This skill has a chance to deal an additional 30% Scattering damage to all enemy forces and reflect all absorbed damage to its source. (Sandora + Maletiz) (Affected by all 4 stats.)",
+    "recipe": ["Sandora", "Maletiz", "Rays of Destiny Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -4621,6 +4623,7 @@
       "1800": ""
     },
     "description": "Has a chance to avoid damage. If attacked, the enemy will receive 10% more damage the next round (stackable). (Nick + Jerome) (Affected by the Dodge and Electron stats.)",
+    "recipe": ["Nick", "Jerome", "Impending Doom Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -4699,6 +4702,7 @@
       "1800": ""
     },
     "description": "This skill has the chance to lower all 4 stats of an enemy commander to 0. The target will also be immobilized in the next round. (Aileen + Stani) (Affected by the Accuracy and Speed stats. )",
+    "recipe": ["Aileen", "Stani", "Desolate Prayers Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -4777,6 +4781,7 @@
       "1800": ""
     },
     "description": "This skill has a chance to deal an additional 50% Scattering Damage and 40% Piercing damage during all attacks.  (Anna + Linda) (Affected by the Accuracy stats.)",
+    "recipe": ["Anna", "Linda", "Deadly Duo Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -4855,6 +4860,7 @@
       "1800": ""
     },
     "description": "This skill has a chance to your fleets an additional 3 spaces and increase attack values by 10% for every space that fleet moves. (Sofia + Lynn ) (Affected by the Speed stat.)",
+    "recipe": ["Sofia", "Lynn", "Frontline Surge Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -4933,6 +4939,7 @@
       "1800": ""
     },
     "description": "This skill increases the critical strike rate of the commanded fleet and the chance of attacking the target twice. Affected by the Accuracy stat. (Gastaf + Todd) (Affected by the Accuracy stat.)",
+    "recipe": ["Gastaf", "Todd", "Twin Torpedoes Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5011,6 +5018,7 @@
       "1800": ""
     },
     "description": "This skill increases the Shield and Structure values of friendly fleets within 4 steps by 8% after each round and has a chance to reduce the Durability, Structures, and Shields of enemy fleets within 2 steps by 5% after every turn. (Annata + Leo) (Affected by the Speed stat.)",
+    "recipe": ["Annata", "Leo", "Light and Darkness Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
@@ -5089,6 +5097,7 @@
       "1800": ""
     },
     "description": "Has a chance to deal double damage and 30% Scattering damage to all ships in an enemy fleet. (Wayne+Sandora) (Affected by the Accuracy and Speed stats)",
+    "recipe": ["Wayne", "Sandora", "Kismet Beams Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5161,12 +5170,13 @@
     },
     "chance": {
       "initial": "",
-      "500": "",
+"500": "",
       "1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "Chance to deal 2x damage to the enemy. Total damage is unaffected by target\\'s Shield, Modules, and Stability. (Wayne+Marcus) (Affected by the Accuracy and Speed stats.)",
+    "description": "Chance to deal 2x damage to the enemy. Total damage is unaffected by target's Shield, Modules, and Stability. (Wayne+Marcus) (Affected by the Accuracy and Speed stats.)",
+    "recipe": ["Wayne", "Marcus", "Fatal Furies Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "A",
@@ -5239,12 +5249,13 @@
     },
     "chance": {
       "initial": "",
-      "500": "",
+"500": "",
       "1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "If Indomitable Duo\\'s Dodge rating is higher than the enemy commander\\'s Accuracy rating, scattering damage and formation penalty is ignored while under attack. Also increases fleet stability. (Heloyce+Andrew) (Affected by the Dodge stat)",
+    "description": "If Indomitable Duo's Dodge rating is higher than the enemy commander's Accuracy rating, scattering damage and formation penalty is ignored while under attack. Also increases fleet stability. (Heloyce+Andrew) (Affected by the Dodge stat)",
+    "recipe": ["Heloyce", "Andrew", "Indomitable Duo Scroll"],
     "prof": {
       "ballistic": "A",
       "directional": "B",
@@ -5317,12 +5328,13 @@
     },
     "chance": {
       "initial": "",
-      "500": "",
+"500": "",
       "1000": "",
       "1500": "",
       "1800": ""
     },
-    "description": "If Death from Above successfully deals either a double or critical attack while the sum of their 4 base stats exceed that of the enemy\\'s, all adjacent shipswill deal double attacks or critical strikes. Enemy abilities will be nullified as well. Affected by all 4 attributes",
+    "description": "If Death from Above successfully deals either a double or critical attack while the sum of their 4 base stats exceed that of the enemy's, all adjacent shipswill deal double attacks or critical strikes. Enemy abilities will be nullified as well. Affected by all 4 attributes",
+    "recipe": ["Robert", "Rayo", "Death From Above Scroll"],
     "prof": {
       "ballistic": "B",
       "directional": "B",
