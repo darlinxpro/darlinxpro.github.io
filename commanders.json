@@ -9186,5 +9186,221 @@
     "tier": "VI",
     "location": "Taurus (any)",
     "rewards": ["Eschaton Adventists", "Hand of Lelantos", "Hekatian Witnesses", "Dopplegangers"]
+  },
+  "Victory Roar Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/68/Victory_Roar_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Penni", "Eveline"]
+  },
+  "Rays of Destiny Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/6d/Rays_of_Destiny_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Sandora", "Maletiz"]
+  },
+  "Impending Doom Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/1/1f/Impending_Doom_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Nick", "Jerome"]
+  },
+  "Desolate Prayers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/b/bf/Desolate_Prayers_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Aileen", "Stani"]
+  },
+  "Deadly Duo Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/88/Deadly_Duo_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Anna", "Linda"]
+  },
+  "Frontline Surge Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/1/1d/Frontline_Surge_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Sofia", "Lynn"]
+  },
+  "Twin Torpedoes Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/43/Twin_Torpedoes_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Gastaf", "Todd"]
+  },
+  "Light and Darkness Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/b/bf/Light_and_Darkness_Scroll.png",
+    "location": "Scroll Chest I - Capricorn (any), Sagitarius.S01",
+    "commanders": ["Annata", "Leo"]
+  },
+  "Kismet Beams Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/68/Kismet_Beams_Scroll.png",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Wayne", "Sandora"]
+  },
+  "Fatal Furies Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e5/Fatal_Furies_Scroll.png",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Wayne", "Marcus"]
+  },
+  "Indomitable Duo Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dc/Indomitable_Duo_Scroll.png",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Heloyce", "Andrew"]
+  },
+  "Death From Above Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/2/25/Death_from_Above_Scroll.png",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Robert", "Rayo"]
+  },
+  "Leech Lurkers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/2/26/Impending_Doom_Icon.jpg",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Bart", "Leo"]
+  },
+  "Eternal Terrors Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/d7/Eternal_Terrors_Scroll.png",
+    "location": "Scroll Chest II - Aquarius (any), Sagitarius.S02",
+    "commanders": ["Reggie", "Hellen"]
+  },
+  "Iron Maidens Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/ed/Iron_Maidens_Scroll.png",
+    "location": "Scroll Chest III - Pisces (any), Sagitarius.S03",
+    "commanders": ["Dilira", "Rafia"]
+  },
+  "Fairy and Fiend Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/d8/Fairy_%26_Fiend_Scroll.png",
+    "location": "Scroll Chest III - Pisces (any), Sagitarius.S03",
+    "commanders": []
+  },
+  "Suicidal Sirens Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/45/Suicidal_Sirens_Scroll.png",
+    "location": "Scroll Chest III - Pisces (any), Sagitarius.S03",
+    "commanders": ["Penni", "Hellen"]
+  },
+  "Wildfire Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/ea/Wildfire_Scroll.png",
+    "location": "Scroll Chest III - Pisces (any), Sagitarius.S03",
+    "commanders": ["Sandora", "Hellen"]
+  },
+  "Tactical Wizards Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/4/4c/Tactical_Wizards_Scroll.png",
+    "location": "Scroll Chest III - Pisces (any), Sagitarius.S03",
+    "commanders": ["Nick", "Bruce"]
+  },
+  "Fearmongers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Scroll Chest IV - Leo (any), Sagitarius.S04",
+    "commanders": ["Raslin", "Bruce"]
+  },
+  "Pernicious Princes Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/3/3e/Pernicious_Princes_Icon.jpg",
+    "location": "Scroll Chest IV - Leo (any), Sagitarius.S04",
+    "commanders": ["Robert", "Jakar"]
+  },
+  "Carbuncle Cohort Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/6/62/Carbuncle_Cohort_Icon.jpg",
+    "location": "Scroll Chest IV - Leo (any), Sagitarius.S04",
+    "commanders": ["Sylla", "Joseph"]
+  },
+  "Enduring Chorus Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/0/09/Enduring_Chorus_Icon.jpg",
+    "location": "Scroll Chest IV - Leo (any), Sagitarius.S04",
+    "commanders": ["Dilira", "Shaba"]
+  },
+  "The Ravagers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/8/83/The_Ravagers_Icon.jpg",
+    "location": "Scroll Chest IV - Leo (any), Sagitarius.S04",
+    "commanders": ["Rocky", "Hellen"]
+  },
+  "Rex Scuta Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/7/78/Rex_Scuta_Icon.jpg",
+    "location": "Scroll Chest V - Virgo (any)",
+    "commanders": ["Rayo", "Rafia"]
+  },
+  "Summa Cum Laude Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e9/Summa_Cum_Laude_Icon.jpg",
+    "location": "Scroll Chest V - Virgo (any)",
+    "commanders": ["Marcus", "Hellen"]
+  },
+  "Eschaton Adventists Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Eschaton_Adventists_sm.jpg",
+    "location": "Scroll Chest VI - Taurus (any)",
+    "commanders": ["Titan", "Aileen"]
+  },
+  "Hand of Lelantos Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e6/HandSm.jpg",
+    "location": "Scroll Chest VI - Taurus (any)",
+    "commanders": ["Titan", "Jakar"]
+  },
+  "Hekatian Witnesses Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/e/e3/HekatianSm.jpg",
+    "location": "Scroll Chest VI - Taurus (any)",
+    "commanders": ["Titan", "Nora"]
+  },
+  "Dopplegangers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/c/c6/DoppleSm.jpg",
+    "location": "Scroll Chest VI - Taurus (any)",
+    "commanders": []
+  },
+  "The Dictators Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Rayo", "Titan"]
+  },
+  "Dune Enforcers Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Maletiz", "Titan"]
+  },
+  "Homeric Hellions Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Andrew", "Titan"]
+  },
+  "Winter Knights Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Bart", "Krina Klaus"]
+  },
+  "Lurking Light Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Bart", "Annata"]
+  },
+  "Feral Raptors Scroll": {
+    "type": "Divine Scroll",
+    "image": "https://static.wikia.nocookie.net/galaxyonlineii/images/d/dd/Fearmongers_Icon.jpg",
+    "location": "Champions' Mall",
+    "commanders": ["Wayne", "Penni"]
   }
 }

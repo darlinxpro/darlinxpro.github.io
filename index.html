@@ -376,14 +376,22 @@
         const baseName = name.replace(/\s+\d+★$/, '');
         const key = baseName.replace(/ /g, '_');
         const commanderInfo = commanders[baseName];
-        const scrollInfo = commanders[key];
-        const hasInfo = commanderInfo || scrollInfo;
-        const isScrollChest = scrollInfo && scrollInfo.type === "Scroll Chest";
+        const scrollChestInfo = commanders[key];
+        const divineScrollInfo = commanders[name];
+        const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
+        const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
+        const hasInfo = commanderInfo || scrollChestInfo || divineScrollInfo;
         const tr = document.createElement('tr');
-        if (isScrollChest) {
+        if (isDivineScroll) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${scrollInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        } else if (isScrollChest) {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else {
@@ -440,14 +448,22 @@
         const baseName = name.replace(/\s+\d+★$/, '');
         const key = baseName.replace(/ /g, '_');
         const commanderInfo = commanders[baseName];
-        const scrollInfo = commanders[key];
-        const hasInfo = commanderInfo || scrollInfo;
-        const isScrollChest = scrollInfo && scrollInfo.type === "Scroll Chest";
+        const scrollChestInfo = commanders[key];
+        const divineScrollInfo = commanders[name];
+        const isScrollChest = scrollChestInfo && scrollChestInfo.type === "Scroll Chest";
+        const isDivineScroll = divineScrollInfo && divineScrollInfo.type === "Divine Scroll";
+        const hasInfo = commanderInfo || scrollChestInfo || divineScrollInfo;
         const tr = document.createElement('tr');
-        if (isScrollChest) {
+        if (isDivineScroll) {
           tr.innerHTML = `
             <td>${id}</td>
-            <td>${scrollInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
+            <td>${divineScrollInfo ? `<span class="commander-link" onclick="showDivineScroll('${name}')">${name}</span>` : name}</td>
+            <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
+          `;
+        } else if (isScrollChest) {
+          tr.innerHTML = `
+            <td>${id}</td>
+            <td>${scrollChestInfo ? `<span class="commander-link" onclick="showScrollChest('${key}', '${name}')">${name}</span>` : name}</td>
             <td><button class="btn btn-primary" onclick="copyToClipboard('${id}', this)">Copiar</button></td>
           `;
         } else {
@@ -634,6 +650,46 @@
         '<div class="mb-2">' +
           '<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>🎁 Possible Rewards</strong></h6>' +
           rewardsHtml +
+        '</div>';
+      
+$('#commanderModal').modal('show');
+    }
+
+    function showDivineScroll(name) {
+      const scroll = commanders[name];
+      if (!scroll) return;
+
+      let commandersHtml = '';
+      if (scroll.commanders && scroll.commanders.length > 0) {
+        commandersHtml = '<div class="row text-center">';
+        scroll.commanders.forEach(cmd => {
+          commandersHtml += `
+            <div class="col-6 mb-2">
+              <div style="background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px;">
+                <span style="color: #339af0; font-size: 14px;">${cmd}</span>
+              </div>
+            </div>
+          `;
+        });
+        commandersHtml += '</div>';
+      } else {
+        commandersHtml = '<p style="color: #fff;">Recipe unknown</p>';
+      }
+
+      document.getElementById('commanderTitle').textContent = name;
+      
+      document.getElementById('commanderBody').innerHTML = 
+        '<div class="row mb-4">' +
+          '<div class="col-md-4 text-center">' +
+            `<img src="${scroll.image}" alt="${name}" style="max-width: 160px; border: 3px solid #ffd43b; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">` +
+            `<h5 class="mt-2" style="color: #ffd43b;">${scroll.type}</h5>` +
+          '</div>' +
+          '<div class="col-md-8">' +
+            `<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>📍 Location</strong></h6>` +
+            `<p class="mb-3" style="color: #fff;">${scroll.location || 'Unknown'}</p>` +
+            `<h6 class="border-bottom border-secondary pb-2 mb-2" style="color: #ccba7a;"><strong>🔧 Required Commanders</strong></h6>` +
+            commandersHtml +
+          '</div>' +
         '</div>';
       
       $('#commanderModal').modal('show');
