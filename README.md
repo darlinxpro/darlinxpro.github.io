@@ -3,7 +3,7 @@
 TSO ID Lookup es una herramienta web diseñada para **buscar y copiar los ID de los ítems** del juego TSO. Permite **enviar ítems a los jugadores** en el chat del juego con el ID correcto y un Player ID específico.
 
 🔗 **Sitio Web:**  
-👉 [ID Lookup](https://darlinxpro.github.io/IdLookup/)
+👉 [ID Lookup](https://darlinxpro.github.io/)
 
 ## 🚀 Funcionalidades
 ✔ **Búsqueda de IDs**: Filtra ítems usando un campo de búsqueda.  
