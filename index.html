@@ -254,88 +254,12 @@
     .footer-link:hover {
       color: #ccc;
     }
-
-    .main-layout {
-      display: flex;
-      gap: 10px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .main-content {
-      flex: 1;
-      max-width: 800px;
-    }
-
-    .sidebar-ad {
-      width: 160px;
-      min-height: 600px;
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .top-ad {
-      margin-bottom: 15px;
-      text-align: center;
-      min-height: 90px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media (max-width: 768px) {
-      .main-layout {
-        flex-direction: column;
-      }
-      .sidebar-ad {
-        width: 100%;
-        min-height: auto;
-        justify-content: center;
-        margin-bottom: 10px;
-      }
-      .sidebar-ad iframe {
-        width: 100% !important;
-        height: auto !important;
-      }
-      .main-content {
-        max-width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <div class="main-layout">
-    <!-- Left Ad -->
-    <div class="sidebar-ad" id="ad-left">
-      <script>
-        atOptions = {
-          'key' : '8a03b1a8987909511513d9d61d2ffc41',
-          'format' : 'iframe',
-          'height' : 300,
-          'width' : 160,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/8a03b1a8987909511513d9d61d2ffc41/invoke.js"></script>
-    </div>
-
-    <div class="main-content container mt-3">
-      <!-- Top Ad -->
-      <div class="top-ad" id="ad-top">
-        <script>
-          atOptions = {
-            'key' : '46ed7a272c8e46e9112f3abe250d8308',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/46ed7a272c8e46e9112f3abe250d8308/invoke.js"></script>
-      </div>
-
-      <h2>ID Lookup</h2>
+  <div class="container mt-3">
+    <h2>ID Lookup</h2>
     
     <p>Type in the box to search by ID, Name or Star (e.g., R8 for 8★):</p>
       <input class="form-control" id="myInput" type="text" placeholder="Search.. (R1-R9 for stars)">
@@ -363,21 +287,6 @@
       Cargando más datos...
     </div>
     </div>
-
-    <!-- Right Ad -->
-    <div class="sidebar-ad" id="ad-right">
-      <script>
-        atOptions = {
-          'key' : '367214beff1c5f40601d6098e016f3a0',
-          'format' : 'iframe',
-          'height' : 600,
-          'width' : 160,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/367214beff1c5f40601d6098e016f3a0/invoke.js"></script>
-    </div>
-  </div>
 
   <script>
     let data = []; 
