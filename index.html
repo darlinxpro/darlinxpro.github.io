@@ -271,6 +271,11 @@
       align-items: flex-start;
     }
 
+    .sidebar-ad iframe {
+      border: none;
+      overflow: hidden;
+    }
+
     .top-ad {
       margin-bottom: 15px;
       text-align: center;
@@ -278,6 +283,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .top-ad iframe {
+      border: none;
+      overflow: hidden;
     }
   </style>
 </head>
@@ -287,7 +297,7 @@
     <!-- Left Ad - AdSterra (160x300) -->
     <div class="sidebar-ad">
       <script>
-        atOptions = {
+        var atOptionsLeft = {
           'key' : '8a03b1a8987909511513d9d61d2ffc41',
           'format' : 'iframe',
           'height' : 300,
@@ -304,7 +314,7 @@
       <!-- Top Ad (Banner 728x90) - AdSterra -->
       <div class="top-ad">
         <script>
-          atOptions = {
+          var atOptionsTop = {
             'key' : '46ed7a272c8e46e9112f3abe250d8308',
             'format' : 'iframe',
             'height' : 90,
@@ -312,7 +322,7 @@
             'params' : {}
           };
         </script>
-        <script src="https://www.highperformanceformat.com/46ed7a272c8e46e9112f3abe250d8308/invoke.js"></script>
+        <script src="https://www.highperformanceformat.com/46ed7a272c8e46a9112f3abe250d8308/invoke.js"></script>
       </div>
 
       <p>Type in the box to search by ID, Name or Star (e.g., R8 for 8★):</p>
@@ -345,7 +355,7 @@
     <!-- Right Ad - AdSterra (160x600) -->
     <div class="sidebar-ad">
       <script>
-        atOptions = {
+        var atOptionsRight = {
           'key' : '367214beff1c5f40601d6098e016f3a0',
           'format' : 'iframe',
           'height' : 600,
