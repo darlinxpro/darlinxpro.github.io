@@ -282,6 +282,25 @@
       justify-content: center;
       align-items: center;
     }
+
+    @media (max-width: 768px) {
+      .main-layout {
+        flex-direction: column;
+      }
+      .sidebar-ad {
+        width: 100%;
+        min-height: auto;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .sidebar-ad iframe {
+        width: 100% !important;
+        height: auto !important;
+      }
+      .main-content {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
