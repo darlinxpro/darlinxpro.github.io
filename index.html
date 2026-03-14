@@ -254,12 +254,47 @@
     .footer-link:hover {
       color: #ccc;
     }
+
+    .main-layout {
+      display: flex;
+      gap: 10px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .main-content {
+      flex: 1;
+      max-width: 800px;
+    }
+
+    .sidebar-ad {
+      width: 160px;
+      min-height: 600px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .top-ad {
+      margin-bottom: 15px;
+      text-align: center;
+      min-height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
 
-  <div class="container mt-3">
-    <h2>ID Lookup</h2>
+  <div class="main-layout">
+    <!-- Left Ad -->
+    <div class="sidebar-ad" id="ad-left"></div>
+
+    <div class="main-content container mt-3">
+      <!-- Top Ad -->
+      <div class="top-ad" id="ad-top"></div>
+
+      <h2>ID Lookup</h2>
     
     <p>Type in the box to search by ID, Name or Star (e.g., R8 for 8★):</p>
       <input class="form-control" id="myInput" type="text" placeholder="Search.. (R1-R9 for stars)">
@@ -283,15 +318,13 @@
       <tbody id="myTable"></tbody>
     </table>
 
-    <div id="loadingMessage" class="loading" style="display: none;">
+<div id="loadingMessage" class="loading" style="display: none;">
       Cargando más datos...
     </div>
     </div>
 
-    <!-- Right Ad - AdSterra (160x600) -->
-    <div id="loadingMessage" class="loading" style="display: none;">
-      Cargando más datos...
-    </div>
+    <!-- Right Ad -->
+    <div class="sidebar-ad" id="ad-right"></div>
   </div>
 
   <script>
