@@ -325,6 +325,28 @@
         <script src="https://www.highperformanceformat.com/46ed7a272c8e46e9112f3abe250d8308/invoke.js"></script>
       </div>
 
+      <p>Type in the box to search by ID, Name or Star (e.g., R8 for 8★):</p>
+      <input class="form-control" id="myInput" type="text" placeholder="Search.. (R1-R9 for stars)">
+      <br>
+
+      <div class="form-inline">
+        <label for="playerId">Player ID:</label>
+        <input class="form-control ml-2" id="playerId" type="number" placeholder="Player ID">
+        <button class="btn btn-success ml-2" id="toggleButton" onclick="togglePlayerId()">Confirmar</button>
+      </div>
+      <br>
+
+      <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="myTable"></tbody>
+    </table>
+
     <div id="loadingMessage" class="loading" style="display: none;">
       Cargando más datos...
     </div>
