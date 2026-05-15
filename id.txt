@@ -1580,6 +1580,15 @@
 1603=Scroll Chest-V
 1604=Dullahan Chest
 1605=Scroll Chest-VI
+2511=Delphine 1★
+2512=Delphine 2★
+2513=Delphine 3★
+2514=Delphine 4★
+2515=Delphine 5★
+2516=Delphine 6★
+2517=Delphine 7★
+2518=Delphine 8★
+2519=Delphine 9★
 3000=Blueprint Shred-I
 3001=Blueprint Shred-II
 3002=Blueprint Shred-III
